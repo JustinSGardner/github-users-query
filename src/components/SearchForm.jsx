@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { loadData } from '../utils/loadData';
+import UserCardList from './UserCardList';
 
 class SearchForm extends Component {
   state = {
@@ -42,6 +43,9 @@ class SearchForm extends Component {
               >#gitThetTharPhoter!!
             </button>
         </form>
+        <div>
+          <UserCardList userData = {this.state.users} />
+        </div>
       </>
     )
   }
